@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.2)  1 APR 2019 19:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.2)  7 JUN 2019 00:28
 entering extended mode
 **./MasterThesisSample.tex
 (MasterThesisSample.tex
@@ -366,6 +366,13 @@ LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+Package: multirow 2018/08/03 v2.3 Span multiple rows of a table
+\multirow@colwidth=\skip46
+\multirow@cntb=\count103
+\multirow@dima=\skip47
+\bigstrutjot=\dimen116
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
 Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
 
@@ -427,8 +434,8 @@ G,.JBIG2,.JB2,.eps]
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-co
 mmon.tex
 \pgfutil@everybye=\toks22
-\pgfutil@tempdima=\dimen116
-\pgfutil@tempdimb=\dimen117
+\pgfutil@tempdima=\dimen117
+\pgfutil@tempdimb=\dimen118
 
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-co
 mmon-lists.tex))
@@ -461,20 +468,20 @@ de.tex
 tered.code.tex
 \pgfkeys@tmptoks=\toks25
 ))
-\pgf@x=\dimen118
-\pgf@y=\dimen119
-\pgf@xa=\dimen120
-\pgf@ya=\dimen121
-\pgf@xb=\dimen122
-\pgf@yb=\dimen123
-\pgf@xc=\dimen124
-\pgf@yc=\dimen125
+\pgf@x=\dimen119
+\pgf@y=\dimen120
+\pgf@xa=\dimen121
+\pgf@ya=\dimen122
+\pgf@xb=\dimen123
+\pgf@yb=\dimen124
+\pgf@xc=\dimen125
+\pgf@yc=\dimen126
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count103
-\c@pgf@countb=\count104
-\c@pgf@countc=\count105
-\c@pgf@countd=\count106
+\c@pgf@counta=\count104
+\c@pgf@countb=\count105
+\c@pgf@countc=\count106
+\c@pgf@countd=\count107
 \t@pgf@toka=\toks26
 \t@pgf@tokb=\toks27
 \t@pgf@tokc=\toks28
@@ -495,8 +502,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsysso
 ftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count107
-\pgfsyssoftpath@bigbuffer@items=\count108
+\pgfsyssoftpath@smallbuffer@items=\count108
+\pgfsyssoftpath@bigbuffer@items=\count109
 )
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsyspr
 otocol.code.tex
@@ -531,8 +538,8 @@ e.tex
 e.tex)
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathparser.c
 ode.tex
-\pgfmath@dimen=\dimen126
-\pgfmath@count=\count109
+\pgfmath@dimen=\dimen127
+\pgfmath@count=\count110
 \pgfmath@box=\box29
 \pgfmath@toks=\toks29
 \pgfmath@stack@operand=\toks30
@@ -558,37 +565,37 @@ s.misc.code.tex)
 s.integerarithmetics.code.tex)))
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfloat.co
 de.tex
-\c@pgfmathroundto@lastzeros=\count110
+\c@pgfmathroundto@lastzeros=\count111
 ))
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepo
 ints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen127
-\pgf@picmaxx=\dimen128
-\pgf@picminy=\dimen129
-\pgf@picmaxy=\dimen130
-\pgf@pathminx=\dimen131
-\pgf@pathmaxx=\dimen132
-\pgf@pathminy=\dimen133
-\pgf@pathmaxy=\dimen134
-\pgf@xx=\dimen135
-\pgf@xy=\dimen136
-\pgf@yx=\dimen137
-\pgf@yy=\dimen138
-\pgf@zx=\dimen139
-\pgf@zy=\dimen140
+\pgf@picminx=\dimen128
+\pgf@picmaxx=\dimen129
+\pgf@picminy=\dimen130
+\pgf@picmaxy=\dimen131
+\pgf@pathminx=\dimen132
+\pgf@pathmaxx=\dimen133
+\pgf@pathminy=\dimen134
+\pgf@pathmaxy=\dimen135
+\pgf@xx=\dimen136
+\pgf@xy=\dimen137
+\pgf@yx=\dimen138
+\pgf@yy=\dimen139
+\pgf@zx=\dimen140
+\pgf@zy=\dimen141
 )
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepa
 thconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen141
-\pgf@path@lasty=\dimen142
+\pgf@path@lastx=\dimen142
+\pgf@path@lasty=\dimen143
 )
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepa
 thusage.code.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen143
-\pgf@shorten@start@additional=\dimen144
+\pgf@shorten@end@additional=\dimen144
+\pgf@shorten@start@additional=\dimen145
 )
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoresc
 opes.code.tex
@@ -596,19 +603,19 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box30
 \pgf@hbox=\box31
 \pgf@layerbox@main=\box32
-\pgf@picture@serial@count=\count111
+\pgf@picture@serial@count=\count112
 )
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoregr
 aphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen145
+\pgflinewidth=\dimen146
 )
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoretr
 ansformations.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen146
-\pgf@pt@y=\dimen147
-\pgf@pt@temp=\dimen148
+\pgf@pt@x=\dimen147
+\pgf@pt@y=\dimen148
+\pgf@pt@temp=\dimen149
 )
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorequ
 ick.code.tex
@@ -625,13 +632,13 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorear
 rows.code.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen149
+\pgfarrowsep=\dimen150
 )
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoresh
 ade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen150
-\pgf@sys@shading@range@num=\count112
+\pgf@max=\dimen151
+\pgf@sys@shading@range@num=\count113
 )
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreim
 age.code.tex
@@ -666,8 +673,8 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcomp-
 version-0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen151
-\pgf@nodesepend=\dimen152
+\pgf@nodesepstart=\dimen152
+\pgf@nodesepend=\dimen153
 )
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcomp-
 version-1-18.sty
@@ -686,8 +693,8 @@ Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.te
 x)
-\pgffor@iter=\dimen153
-\pgffor@skip=\dimen154
+\pgffor@iter=\dimen154
+\pgffor@skip=\dimen155
 \pgffor@stack=\toks32
 \pgffor@toks=\toks33
 ))
@@ -698,32 +705,32 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibrary
 plothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count113
-\pgfplotmarksize=\dimen155
+\pgf@plot@mark@count=\count114
+\pgfplotmarksize=\dimen156
 )
-\tikz@lastx=\dimen156
-\tikz@lasty=\dimen157
-\tikz@lastxsaved=\dimen158
-\tikz@lastysaved=\dimen159
-\tikzleveldistance=\dimen160
-\tikzsiblingdistance=\dimen161
+\tikz@lastx=\dimen157
+\tikz@lasty=\dimen158
+\tikz@lastxsaved=\dimen159
+\tikz@lastysaved=\dimen160
+\tikzleveldistance=\dimen161
+\tikzsiblingdistance=\dimen162
 \tikz@figbox=\box35
 \tikz@figbox@bg=\box36
 \tikz@tempbox=\box37
 \tikz@tempbox@bg=\box38
-\tikztreelevel=\count114
-\tikznumberofchildren=\count115
-\tikznumberofcurrentchild=\count116
-\tikz@fig@count=\count117
+\tikztreelevel=\count115
+\tikznumberofchildren=\count116
+\tikznumberofcurrentchild=\count117
+\tikz@fig@count=\count118
 
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodulemat
 rix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count118
-\pgfmatrixcurrentcolumn=\count119
-\pgf@matrix@numberofcolumns=\count120
+\pgfmatrixcurrentrow=\count119
+\pgfmatrixcurrentcolumn=\count120
+\pgf@matrix@numberofcolumns=\count121
 )
-\tikz@expandcount=\count121
+\tikz@expandcount=\count122
 
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
 ibraries\tikzlibrarytopaths.code.tex
@@ -743,49 +750,71 @@ Package ifvtex Info: VTeX not detected.
 ("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count122
-\Gm@cntv=\count123
-\c@Gm@tempcnt=\count124
-\Gm@bindingoffset=\dimen162
-\Gm@wd@mp=\dimen163
-\Gm@odd@mp=\dimen164
-\Gm@even@mp=\dimen165
-\Gm@layoutwidth=\dimen166
-\Gm@layoutheight=\dimen167
-\Gm@layouthoffset=\dimen168
-\Gm@layoutvoffset=\dimen169
+\Gm@cnth=\count123
+\Gm@cntv=\count124
+\c@Gm@tempcnt=\count125
+\Gm@bindingoffset=\dimen163
+\Gm@wd@mp=\dimen164
+\Gm@odd@mp=\dimen165
+\Gm@even@mp=\dimen166
+\Gm@layoutwidth=\dimen167
+\Gm@layoutheight=\dimen168
+\Gm@layouthoffset=\dimen169
+\Gm@layoutvoffset=\dimen170
 \Gm@dimlist=\toks34
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-\c@theorem=\count125
-\c@corollary=\count126
-\c@lemma=\count127
-\c@proposition=\count128
-\c@remark=\count129
-\c@assumption=\count130
-\c@example=\count131
-\c@definition=\count132
-\c@figcount=\count133
+\c@theorem=\count126
+\c@corollary=\count127
+\c@lemma=\count128
+\c@proposition=\count129
+\c@remark=\count130
+\c@assumption=\count131
+\c@example=\count132
+\c@definition=\count133
+\c@figcount=\count134
 
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\latex\titlesec\titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box39
-\beforetitleunit=\skip46
-\aftertitleunit=\skip47
-\ttl@plus=\dimen170
-\ttl@minus=\dimen171
+\beforetitleunit=\skip48
+\aftertitleunit=\skip49
+\ttl@plus=\dimen171
+\ttl@minus=\dimen172
 \ttl@toksa=\toks35
-\titlewidth=\dimen172
-\titlewidthlast=\dimen173
-\titlewidthfirst=\dimen174
+\titlewidth=\dimen173
+\titlewidthlast=\dimen174
+\titlewidthfirst=\dimen175
 )
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\latex\titlesec\titletoc.sty
 Package: titletoc 2011/12/15 v1.6 TOC entries
-\ttl@leftsep=\dimen175
+\ttl@leftsep=\dimen176
 ))
+(C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+
+(C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen177
+\captionmargin@=\dimen178
+\captionwidth=\dimen179
+\caption@tempdima=\dimen180
+\caption@indent=\dimen181
+\caption@parindent=\dimen182
+\caption@hangindent=\dimen183
+)
+\c@caption@flags=\count135
+\c@ContinuedFloat=\count136
+)
+Package caption Info: We need package `newfloat' on input line 7.
+
+(C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\newfloat.sty
+Package: newfloat 2018/03/04 v1.1a Defining new floating environments (AR)
+)
 (MasterThesisSample.aux
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 3.
 
@@ -794,33 +823,33 @@ File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
 \openout1 = `MasterThesisSample.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 
 (C:\Users\Shama\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count134
-\scratchdimen=\dimen176
+\scratchcounter=\count137
+\scratchdimen=\dimen184
 \scratchbox=\box40
-\nofMPsegments=\count135
-\nofMParguments=\count136
+\nofMPsegments=\count138
+\nofMParguments=\count139
 \everyMPshowfont=\toks36
-\MPscratchCnt=\count137
-\MPscratchDim=\dimen177
-\MPnumerator=\count138
-\makeMPintoPDFobject=\count139
+\MPscratchCnt=\count140
+\MPscratchDim=\dimen185
+\MPnumerator=\count141
+\makeMPintoPDFobject=\count142
 \everyMPtoPDFconversion=\toks37
 ) ABD: EveryShipout initializing macros
 *geometry* driver: auto-detecting
@@ -857,140 +886,440 @@ LaTeX Font Info:    ... okay on input line 7.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 
-Overfull \hbox (14.22635pt too wide) in paragraph at lines 27--27
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 33--33
 []| [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--33
+
  []
 
 [1
 
 {C:/Users/Shama/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (MasterThesisSample.toc
-Overfull \hbox (7.9181pt too wide) detected at line 4
+Overfull \hbox (7.9181pt too wide) detected at line 5
 \T2A/cmr/bx/n/14.4 1 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--6
+Underfull \hbox (badness 10000) in paragraph at lines 7--7
 []|\T2A/cmr/m/n/14.4 1.2 Прин-цип мак-си-му-ма и усло-вия транс-вер-саль-но-сти
  на 
  []
 
 
-Overfull \hbox (7.9181pt too wide) detected at line 7
+Overfull \hbox (7.9181pt too wide) detected at line 8
 \T2A/cmr/bx/n/14.4 2 
+ []
+
+
+Overfull \hbox (7.9181pt too wide) detected at line 11
+\T2A/cmr/bx/n/14.4 3 
+ []
+
+
+Underfull \hbox (badness 3780) in paragraph at lines 11--11
+\T2A/cmr/bx/n/14.4 НО-ГО УПРАВ-ЛЕ-НИЯ МЕ-ТО-ДОМ УПРАВ-ЛЕ-НИЯ ПО 
+ []
+
+
+Underfull \hbox (badness 2359) in paragraph at lines 12--12
+[]|\T2A/cmr/m/n/14.4 3.1 За-да-ча оп-ти-ми-за-ции нео-клас-си-че-ской мо-де-ли 
+эко-но-ми-че-ско-го 
+ []
+
+
+Overfull \hbox (7.9181pt too wide) detected at line 14
+\T2A/cmr/bx/n/14.4 4 
  []
 
 )
 \tf@toc=\write4
 \openout4 = `MasterThesisSample.toc'.
 
- (intro.tex [2
+ (referat.tex [2
+
+]) (referat2.tex [3
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
+Underfull \hbox (badness 5231) in paragraph at lines 8--9
+\T2A/cmr/m/n/14.4 КIРАВАННЕ ПА ПРА-Г-НА-ЗУ-Ю-ЧАЙ МА-Д-ЭЛI, АП-ТЫ-МI-ЗА-ЦЫЯ У
  []
 
+) (referat3.tex [4
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
-
+]
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+\T2A/cmr/m/n/14.4 MODEL PREDICTIVE CONTROL, REAL TIME OPTIMIZATION,
  []
 
+) (intro.tex [5
 
-Underfull \hbox (badness 1460) in paragraph at lines 12--13
-\T2A/cmr/m/n/14.4 по-ве-де-ния со-пря-жен-ной пе-ре-мен-ной на бес-ко-неч-но-ст
-и (с точ-ки зре-ния
- []
+] [6
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
-
- []
-
-
-Underfull \hbox (badness 1024) in paragraph at lines 14--15
-\T2A/cmr/m/n/14.4 эко-но-ми-че-ский смысл и слу-жат важ-ной ха-рак-те-ри-сти-ко
-й оп-ти-маль-но-го
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
-
- []
-
-[3
-
-]) (chapter1.tex [4]
+]) (chapter1.tex [7]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
-LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 4.
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [5
+) [8
 
 ]
-\c@Def=\count140
-\c@Def2=\count141
- [6] [7]
-Underfull \hbox (badness 1817) in paragraph at lines 95--96
-[]\T2A/cmr/m/n/14.4 В ка-че-стве при-ме-ра эко-но-ми-че-ской мо-де-ли, при-во-д
-я-щей к за-да-че
- []
+\c@Def=\count143
+\c@Def1=\count144
+ [9] [10]
+[11]
+\c@Def2=\count145
+ [12]
+\c@Th=\count146
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
-
- []
-
-[9] [10] [11] [12]
-\c@Def3=\count142
- [13]
-\c@Th=\count143
-
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 []\T2A/cmr/m/it/14.4 Пусть вы-пол-ня-ют-ся усло-вия
  []
 
-[14]) (chapter4.tex [15]
+[13]) (chapter4.tex [14]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
-[16
+[15
 
-] [17] [18] [19] [20]) (conclusions.tex [21]) (bibliography.tex [22
+] [16] [17] [18] [19] [20] [21]) (chapter5.tex [22]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
 
-])
+Underfull \hbox (badness 1275) in paragraph at lines 5--5
+ |[]\T2A/cmr/bx/n/17.28 Задача оп-ти-ми-за-ции нео-клас-си-че-ской мо-де-ли
+ []
+
 [23
 
-] (MasterThesisSample.aux) ) 
+]
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+[24] [25] [26]
+Underfull \hbox (badness 1184) in paragraph at lines 169--170
+[]\T2A/cmr/m/n/14.4 У си-сте-мы (3.14[]) су-ще-ству-ет ста-ци-о-нар-ное ре-ше-н
+ие $\OML/cmm/m/it/14.4 x\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 t\OT1/cmr/m/n/14.
+4 ) \OMS/cmsy/m/n/14.4  \OML/cmm/m/it/14.4 x[] \OMS/cmsy/m/n/14.4  
+ []
+
+[27]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 209.
+
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 209.
+ [28] [29]
+Underfull \hbox (badness 1270) in paragraph at lines 295--296
+[]\T2A/cmr/m/n/14.4 У си-сте-мы (3.32[]) су-ще-ству-ет ста-ци-о-нар-ное ре-ше-н
+ие $\OML/cmm/m/it/14.4 a\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 t\OT1/cmr/m/n/14.
+4 ) \OMS/cmsy/m/n/14.4  \OML/cmm/m/it/14.4 a[] \OMS/cmsy/m/n/14.4  
+ []
+
+[30]) (chapter6.tex [31]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
+LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 23.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\cyrillic\t2acmtt.fd"
+File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+) [32
+
+] [33]
+Package epstopdf Info: Source file: <fig_x1_tf2_w1.eps>
+(epstopdf)                    date: 2019-05-30 03:44:47
+(epstopdf)                    size: 90755 bytes
+(epstopdf)             Output file: <fig_x1_tf2_w1-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-05-30 03:48:56
+(epstopdf)                    size: 16494 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig_x1_tf2_w1-eps-converted
+-to.pdf fig_x1_tf2_w1.eps>
+(epstopdf)             \includegraphics on input line 97.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./fig_x1_tf2_w1-eps-converted-to.pdf): PDF inclu
+sion: found PDF version <1.7>, but at most version <1.5> allowed
+<fig_x1_tf2_w1-eps-converted-to.pdf, id=125, 752.8125pt x 301.125pt>
+File: fig_x1_tf2_w1-eps-converted-to.pdf Graphic file (type pdf)
+<use fig_x1_tf2_w1-eps-converted-to.pdf>
+Package pdftex.def Info: fig_x1_tf2_w1-eps-converted-to.pdf  used on input line
+ 97.
+(pdftex.def)             Requested size: 440.16591pt x 176.0724pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <fig_x20_tf2_w1.eps>
+(epstopdf)                    date: 2019-05-31 22:46:09
+(epstopdf)                    size: 90177 bytes
+(epstopdf)             Output file: <fig_x20_tf2_w1-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-05-31 22:47:47
+(epstopdf)                    size: 16145 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig_x20_tf2_w1-eps-converte
+d-to.pdf fig_x20_tf2_w1.eps>
+(epstopdf)             \includegraphics on input line 106.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./fig_x20_tf2_w1-eps-converted-to.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<fig_x20_tf2_w1-eps-converted-to.pdf, id=126, 752.8125pt x 301.125pt>
+File: fig_x20_tf2_w1-eps-converted-to.pdf Graphic file (type pdf)
+<use fig_x20_tf2_w1-eps-converted-to.pdf>
+Package pdftex.def Info: fig_x20_tf2_w1-eps-converted-to.pdf  used on input lin
+e 106.
+(pdftex.def)             Requested size: 440.16591pt x 176.0724pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <fig_x1_tf50_w1.eps>
+(epstopdf)                    date: 2019-05-30 04:03:06
+(epstopdf)                    size: 91871 bytes
+(epstopdf)             Output file: <fig_x1_tf50_w1-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-05-30 04:12:59
+(epstopdf)                    size: 15137 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig_x1_tf50_w1-eps-converte
+d-to.pdf fig_x1_tf50_w1.eps>
+(epstopdf)             \includegraphics on input line 115.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./fig_x1_tf50_w1-eps-converted-to.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<fig_x1_tf50_w1-eps-converted-to.pdf, id=127, 752.8125pt x 301.125pt>
+File: fig_x1_tf50_w1-eps-converted-to.pdf Graphic file (type pdf)
+<use fig_x1_tf50_w1-eps-converted-to.pdf>
+Package pdftex.def Info: fig_x1_tf50_w1-eps-converted-to.pdf  used on input lin
+e 115.
+(pdftex.def)             Requested size: 440.16591pt x 176.0724pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <fig_x1_tf2_w01.eps>
+(epstopdf)                    date: 2019-05-30 04:05:27
+(epstopdf)                    size: 90829 bytes
+(epstopdf)             Output file: <fig_x1_tf2_w01-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-05-30 04:13:00
+(epstopdf)                    size: 20032 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig_x1_tf2_w01-eps-converte
+d-to.pdf fig_x1_tf2_w01.eps>
+(epstopdf)             \includegraphics on input line 124.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./fig_x1_tf2_w01-eps-converted-to.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<fig_x1_tf2_w01-eps-converted-to.pdf, id=128, 752.8125pt x 301.125pt>
+File: fig_x1_tf2_w01-eps-converted-to.pdf Graphic file (type pdf)
+<use fig_x1_tf2_w01-eps-converted-to.pdf>
+Package pdftex.def Info: fig_x1_tf2_w01-eps-converted-to.pdf  used on input lin
+e 124.
+(pdftex.def)             Requested size: 440.16591pt x 176.0724pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <fig_x1_tf2_w10.eps>
+(epstopdf)                    date: 2019-05-30 04:09:04
+(epstopdf)                    size: 90755 bytes
+(epstopdf)             Output file: <fig_x1_tf2_w10-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-05-30 04:13:01
+(epstopdf)                    size: 15487 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig_x1_tf2_w10-eps-converte
+d-to.pdf fig_x1_tf2_w10.eps>
+(epstopdf)             \includegraphics on input line 133.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./fig_x1_tf2_w10-eps-converted-to.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<fig_x1_tf2_w10-eps-converted-to.pdf, id=129, 752.8125pt x 301.125pt>
+File: fig_x1_tf2_w10-eps-converted-to.pdf Graphic file (type pdf)
+<use fig_x1_tf2_w10-eps-converted-to.pdf>
+Package pdftex.def Info: fig_x1_tf2_w10-eps-converted-to.pdf  used on input lin
+e 133.
+(pdftex.def)             Requested size: 440.16591pt x 176.0724pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[34]
+
+LaTeX Warning: Text page 35 contains only floats.
+
+[35 <./fig_x1_tf2_w1-eps-converted-to.pdf> <./fig_x20_tf2_w1-eps-converted-to.p
+df> <./fig_x1_tf50_w1-eps-converted-to.pdf>] [36 <./fig_x1_tf2_w01-eps-converte
+d-to.pdf> <./fig_x1_tf2_w10-eps-converted-to.pdf>] [37]
+Overfull \hbox (5.96358pt too wide) in paragraph at lines 192--192
+[]        \T2A/cmtt/m/n/14.4 k_s = fsolve(@(k) df(k)-(delta+rho+n),1,optoff); %
+k_s = a_s[] 
+ []
+
+[38]
+Package epstopdf Info: Source file: <fig_ex2_x1_1_tf2_w1.eps>
+(epstopdf)                    date: 2019-06-01 00:44:17
+(epstopdf)                    size: 181096 bytes
+(epstopdf)             Output file: <fig_ex2_x1_1_tf2_w1-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-06-01 00:44:55
+(epstopdf)                    size: 28641 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig_ex2_x1_1_tf2_w1-eps-con
+verted-to.pdf fig_ex2_x1_1_tf2_w1.eps>
+(epstopdf)             \includegraphics on input line 268.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./fig_ex2_x1_1_tf2_w1-eps-converted-to.pdf): PDF
+ inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<fig_ex2_x1_1_tf2_w1-eps-converted-to.pdf, id=161, 903.375pt x 301.125pt>
+File: fig_ex2_x1_1_tf2_w1-eps-converted-to.pdf Graphic file (type pdf)
+<use fig_ex2_x1_1_tf2_w1-eps-converted-to.pdf>
+Package pdftex.def Info: fig_ex2_x1_1_tf2_w1-eps-converted-to.pdf  used on inpu
+t line 268.
+(pdftex.def)             Requested size: 440.16591pt x 146.72546pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <fig_ex2_x20_20_tf2_w1.eps>
+(epstopdf)                    date: 2019-06-01 00:31:20
+(epstopdf)                    size: 181193 bytes
+(epstopdf)             Output file: <fig_ex2_x20_20_tf2_w1-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2019-06-01 00:39:44
+(epstopdf)                    size: 27846 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig_ex2_x20_20_tf2_w1-eps-c
+onverted-to.pdf fig_ex2_x20_20_tf2_w1.eps>
+(epstopdf)             \includegraphics on input line 277.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./fig_ex2_x20_20_tf2_w1-eps-converted-to.pdf): P
+DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<fig_ex2_x20_20_tf2_w1-eps-converted-to.pdf, id=162, 903.375pt x 301.125pt>
+File: fig_ex2_x20_20_tf2_w1-eps-converted-to.pdf Graphic file (type pdf)
+<use fig_ex2_x20_20_tf2_w1-eps-converted-to.pdf>
+Package pdftex.def Info: fig_ex2_x20_20_tf2_w1-eps-converted-to.pdf  used on in
+put line 277.
+(pdftex.def)             Requested size: 440.16591pt x 146.72546pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <fig_ex2_x1_1_tf10_w1.eps>
+(epstopdf)                    date: 2019-06-01 00:34:37
+(epstopdf)                    size: 180583 bytes
+(epstopdf)             Output file: <fig_ex2_x1_1_tf10_w1-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2019-06-01 00:39:45
+(epstopdf)                    size: 19514 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig_ex2_x1_1_tf10_w1-eps-co
+nverted-to.pdf fig_ex2_x1_1_tf10_w1.eps>
+(epstopdf)             \includegraphics on input line 286.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./fig_ex2_x1_1_tf10_w1-eps-converted-to.pdf): PD
+F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<fig_ex2_x1_1_tf10_w1-eps-converted-to.pdf, id=163, 903.375pt x 301.125pt>
+File: fig_ex2_x1_1_tf10_w1-eps-converted-to.pdf Graphic file (type pdf)
+<use fig_ex2_x1_1_tf10_w1-eps-converted-to.pdf>
+Package pdftex.def Info: fig_ex2_x1_1_tf10_w1-eps-converted-to.pdf  used on inp
+ut line 286.
+(pdftex.def)             Requested size: 440.16591pt x 146.72546pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <fig_ex2_x1_1_tf2_w03.eps>
+(epstopdf)                    date: 2019-06-01 00:38:10
+(epstopdf)                    size: 180815 bytes
+(epstopdf)             Output file: <fig_ex2_x1_1_tf2_w03-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2019-06-01 00:42:12
+(epstopdf)                    size: 32920 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig_ex2_x1_1_tf2_w03-eps-co
+nverted-to.pdf fig_ex2_x1_1_tf2_w03.eps>
+(epstopdf)             \includegraphics on input line 295.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./fig_ex2_x1_1_tf2_w03-eps-converted-to.pdf): PD
+F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<fig_ex2_x1_1_tf2_w03-eps-converted-to.pdf, id=164, 903.375pt x 301.125pt>
+File: fig_ex2_x1_1_tf2_w03-eps-converted-to.pdf Graphic file (type pdf)
+<use fig_ex2_x1_1_tf2_w03-eps-converted-to.pdf>
+Package pdftex.def Info: fig_ex2_x1_1_tf2_w03-eps-converted-to.pdf  used on inp
+ut line 295.
+(pdftex.def)             Requested size: 440.16591pt x 146.72546pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <fig_ex2_x1_1_tf2_w10.eps>
+(epstopdf)                    date: 2019-06-01 00:39:29
+(epstopdf)                    size: 180721 bytes
+(epstopdf)             Output file: <fig_ex2_x1_1_tf2_w10-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2019-06-01 00:42:13
+(epstopdf)                    size: 22131 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig_ex2_x1_1_tf2_w10-eps-co
+nverted-to.pdf fig_ex2_x1_1_tf2_w10.eps>
+(epstopdf)             \includegraphics on input line 304.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./fig_ex2_x1_1_tf2_w10-eps-converted-to.pdf): PD
+F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<fig_ex2_x1_1_tf2_w10-eps-converted-to.pdf, id=165, 903.375pt x 301.125pt>
+File: fig_ex2_x1_1_tf2_w10-eps-converted-to.pdf Graphic file (type pdf)
+<use fig_ex2_x1_1_tf2_w10-eps-converted-to.pdf>
+Package pdftex.def Info: fig_ex2_x1_1_tf2_w10-eps-converted-to.pdf  used on inp
+ut line 304.
+(pdftex.def)             Requested size: 440.16591pt x 146.72546pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[39] [40 <./fig_ex2_x1_1_tf2_w1-eps-converted-to.pdf> <./fig_ex2_x20_20_tf2_w1-
+eps-converted-to.pdf> <./fig_ex2_x1_1_tf10_w1-eps-converted-to.pdf>] [41 <./fig
+_ex2_x1_1_tf2_w03-eps-converted-to.pdf> <./fig_ex2_x1_1_tf2_w10-eps-converted-t
+o.pdf>]) (conclusions.tex [42]) (bibliography.tex [43
+
+] [44
+
+]) [45]
+(MasterThesisSample.aux) ) 
 Here is how much of TeX's memory you used:
- 14601 strings out of 492970
- 276962 string characters out of 3135855
- 330295 words of memory out of 3000000
- 18150 multiletter control sequences out of 15000+200000
- 11965 words of font info for 32 fonts, out of 3000000 for 9000
+ 16013 strings out of 492970
+ 304388 string characters out of 3135855
+ 357788 words of memory out of 3000000
+ 19516 multiletter control sequences out of 15000+200000
+ 12275 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,16n,56p,1022b,207s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Shama\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\lh\lh-t2a\dpi600\lati1440.pk> <C:\Users\Shama\AppData\Local\MiKTeX\2.9\f
-onts\pk\ljfour\lh\lh-t2a\dpi600\larm1000.pk> <C:\Users\Shama\AppData\Local\MiKT
-eX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1728.pk> <C:\Users\Shama\AppData\Lo
-cal\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1440.pk> <C:\Users\Shama\Ap
-pData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1440.pk><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm1
-0.pfb>
-Output written on MasterThesisSample.pdf (23 pages, 250018 bytes).
+ 62i,17n,56p,1190b,285s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Shama\AppData\Local\MiKTeX\2.9\fonts\pk\lj
+four\lh\lh-t2a\dpi600\latt1440.pk> <C:\Users\Shama\AppData\Local\MiKTeX\2.9\fon
+ts\pk\ljfour\lh\lh-t2a\dpi600\lati1440.pk> <C:\Users\Shama\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1000.pk> <C:\Users\Shama\AppData\Loca
+l\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1728.pk> <C:\Users\Shama\AppD
+ata\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1440.pk> <C:\Users\Sh
+ama\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1440.pk><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+
+Output written on MasterThesisSample.pdf (45 pages, 578744 bytes).
 PDF statistics:
- 411 PDF objects out of 1000 (max. 8388607)
+ 701 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2,6 +2,10 @@
 \usepackage[cp1251]{inputenc}
 \usepackage{BSUStyle}
 %\usepackage{refcheck}
+\usepackage{caption}
+\DeclareCaptionLabelSeparator{defffis}{ --- }
+\captionsetup{justification=centering,labelsep=defffis,figurename={Рисунок}}
+%\usepackage[labelsep=period,labelfont=bf,figurename={Рисунок},figurewithin=none]{caption}
 
 
 \begin{document}
@@ -12,7 +16,7 @@
 
 \title{МЕТОДЫ УПРАВЛЕНИЯ ПО ПРОГНОЗИРУЮЩЕЙ МОДЕЛИ ДЛЯ ОТСЛЕЖИВАНИЯ МАГИСТРАЛЕЙ В ЗАДАЧАХ ЭКОНОМИЧЕСКОЙ ДИНАМИКИ}
 
-\author{ВДОВЕНКО Екатерина Сергеевна}
+\author{КУНИНА Екатерина Сергеевна}
 
 \project{Магистерская диссертация \\
         специальность 1-31 80 09 «Прикладная математика и информатика»}
@@ -23,6 +27,8 @@
 % для магистерских
 \supervisor{Наталия Михайловна Дмитрук \\ канд. физ.-мат. наук, доцент}
 
+
+%\flushleft{Допущена к защите \\ \def\hrf#1{\hbox to#1{\hrulefill}} <<\hrf{2em}>> \hrf{6em} 2019 г. \\ Заведующий кафедрой МОУ \\ \hrf{6em} Н.М. Дмитрук\\ канд. физ.-мат. наук, доцент}
 
 \BSUtitle
 
@@ -37,9 +43,13 @@
 %   ОСНОВНАЯ ЧАСТЬ
 % ************************************************************************
 
-%\input{referat}
+\input{referat}
+\input{referat2}
+\input{referat3}
 
 \input{intro}
+
+%\input{chapter0}
 
 \input{chapter1}
 
@@ -50,6 +60,8 @@
 \input{chapter4}
 
 \input{chapter5}
+
+\input{chapter6}
 
 % ************************************************************************
 %   ЗАКЛЮЧЕНИЕ

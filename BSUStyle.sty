@@ -6,6 +6,7 @@
 \RequirePackage{amsmath,amsfonts,amssymb}
 \RequirePackage{cite}
 
+\RequirePackage{multirow}
 
 \RequirePackage{epstopdf}
 \RequirePackage{tikz}
@@ -82,7 +83,7 @@
 
 
 \addto\captionsrussian{\def\contentsname{\centerline{ОГЛАВЛЕНИЕ\vspace{-2em}}}}
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{1}
 
 \RequirePackage{titletoc}
 
@@ -99,11 +100,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \def\@biblabel#1{#1}
-\addto\captionsrussian{\def\bibname{\centerline{СПИСОК ИСПОЛЬЗОВАННОЙ ЛИТЕРАТУРЫ \vspace{-1em}}}}
+\addto\captionsrussian{\def\bibname{\centerline{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ \vspace{-1em}}}}
 
 \newenvironment{biblio}{
         \newpage
-        \addcontentsline{toc}{chapter}{СПИСОК ИСПОЛЬЗОВАННОЙ ЛИТЕРАТУРЫ}
+        \addcontentsline{toc}{chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
         \begin{thebibliography}{99}
                   \itemindent=15mm \itemsep=-4pt} % для оформления по ГОСТ}
         {\end{thebibliography}}
@@ -112,24 +113,13 @@
 %  МАТЕМАТИЧЕСКИЕ
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \newcommand{\rank}{\mathop{\rm rank}\nolimits}
 \newcommand{\diag}{\mathop{\rm diag}\nolimits}
 \newcommand{\dett}{\mathop{\rm det}\nolimits}
 \newcommand{\intt}{\mathop{\rm int}\nolimits}
 \newcommand{\sign}{\mathop{\rm sign}\nolimits}
-\newcommand{\extr}{\mathop{\rm extr}\nolimits}
-\newcommand{\aff}{\mathop{\rm aff}\nolimits}
-\newcommand{\conv}{\mathop{\rm conv}\nolimits}
-\newcommand{\tr}{\mathop{\rm tr}\nolimits}
-\newcommand{\dom}{\mathop{\rm dom}\nolimits}
-\newcommand{\epi}{\mathop{\rm epi}\nolimits}
 \newcommand{\R}{\mathbb{R}}
-\newcommand{\Sd}{\mathbb{S}_+}
-\newcommand{\Pd}{\mathbb{S}_{++}}
-\newcommand{\st}{\mathop{\textrm{ subject to} \ \ }}
-%\newcommand{\st}{\textrm{при} \ \ }
-\newcommand{\wave}{\qquad \rightsquigarrow \qquad }
+\newcommand{\st}{\textrm{при} \ \ }
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -140,6 +130,7 @@
 \makeatletter
 \newcommand*{\project}[1]{\gdef\@project{#1}}
 \newcommand*{\supervisor}[1]{\gdef\@supervisor{#1}}
+\newcommand*{\spec}[1]{\gdef\@spec{#1}}
 
 \def\BSUtitle{%
 \begin{titlepage}
@@ -175,15 +166,61 @@
 
 \vspace {1 cm}
 
-%\noindent\begin{minipage}[t]{0.7\textwidth}
-%Допущена к защите \\ \vskip 0.1em
-%<<\rule{1 cm}{0,2 pt}>> \rule{4 cm}{0,2 pt} {\the\year \ г.}  \\
-%Зав. кафедрой методов оптимального управления \\
-%канд. физ.-мат. наук, доцент Н.М. Дмитрук
-%\end{minipage}
+\noindent\begin{minipage}[t]{0.7\textwidth}
+Допущена к защите \\ \vskip 0.1em
+<<\rule{1 cm}{0,2 pt}>> \rule{4 cm}{0,2 pt} {\the\year \ г.}  \\
+Зав. кафедрой методов оптимального управления \\
+канд. физ.-мат. наук, доцент Н.М. Дмитрук
+\end{minipage}
 \vfill
 
 \centerline{Минск \the\year}
+\end{titlepage}
+\setcounter{page}{2}
+}
+
+
+\def\BSUtitleCourse{%
+\begin{titlepage}
+\baselineskip 1.7em
+
+    \begin{center}
+        \textbf{\hspace{-3mm}МИНИСТЕРСТВО ОБРАЗОВАНИЯ РЕСПУБЛИКИ БЕЛАРУСЬ \\
+        БЕЛОРУССКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ\\
+        ФАКУЛЬТЕТ ПРИКЛАДНОЙ МАТЕМАТИКИ И ИНФОРМАТИКИ \\
+        Кафедра методов оптимального управления} \\
+
+        \vfill
+
+
+        \vskip 2em
+
+        {\large \bfseries  \@title}
+
+        \vskip 2em
+
+        \@project
+    \end{center}
+
+\vfill
+
+
+
+{\hspace*{8cm}\begin{minipage}[t]{9cm}
+\@author \\
+студента 3 курса,\\
+специальность <<\@spec>>
+
+\vspace{1cm}
+
+Научный руководитель: \\ \@supervisor
+\end{minipage}}
+
+
+
+\vfill
+
+\centerline{Минск, \the\year}
 \end{titlepage}
 \setcounter{page}{2}
 }
