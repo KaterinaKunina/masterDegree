@@ -1,0 +1,320 @@
+\documentclass{beamer}
+\usepackage{beamerinnerthemecircles, beamerouterthemeshadow}
+\usepackage{amsmath, amsfonts, amscd, epsfig, amssymb, amsthm, pb-diagram}
+\usepackage{color}
+\usepackage[cp1251]{inputenc}
+\usepackage[english,russian]{babel}
+
+\usepackage{graphicx}
+
+
+\usetheme{Boadilla}
+
+
+
+\setbeamertemplate{navigation symbols}{}
+
+
+\title[Динамическое программирование] {Динамическое программирование}
+
+\author[Вдовенко Екатерина]{Вдовенко Екатерина Сергеевна}
+
+\institute[БГУ, ФПМИ]{Факультет прикладной математики и информатики  \\ Кафедра методов оптимального управления}
+
+\date[]{\small ноябрь 2017}
+
+
+\begin{document}
+
+\maketitle
+
+%-------------------------------------------------------------------------------------------------------
+
+
+\begin{frame}{Введение}
+    \[
+    \begin{diagram}
+        \node{\text{\definecolor{light-blue}{rgb}{0.8,0.85,1}
+                \fcolorbox{blue}{light-blue}{\LARGE{УПРАВЛЕНИЕ}}}}
+                            \arrow[2]{sw,r}{}
+                            \arrow[2]{se,l}{}\\\\\\
+        \node[4]{\text{\definecolor{light-blue}{rgb}{0.8,0.85,1}
+                \fcolorbox{blue}{light-blue}{ПОЗИЦИОННОЕ}}}\\\\\\\
+        \node{}{\text{\definecolor{light-blue}{rgb}{0.8,0.85,1}
+                \fcolorbox{blue}{light-blue}{ПРОГРАМНОЕ}}}
+    \end{diagram}
+    \]
+
+    \begin{figure}[t]
+      %\begin{multicols}{2}
+        \hfill
+        \includegraphics[width=70mm]{Page1.PNG}
+        \hfill
+        \caption{Программное управление/разомкнутый контур}
+        \label{Page1}
+      %  \hfill
+      %  \includegraphics[with=70mm]{Page2.PNG}
+      %  \hfill
+      %  \caption{Обратная связь/замкнутый контур}
+      % \label{Page2}
+      %\end{multicols}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Сравнение принципа максимума и динамического программирования}
+    \begin{center}
+        \begin{tabular}[t]{|p{16em}|p{13em}|}
+          \hline
+            \textbf{Принцип максимума} & \textbf{Динамическое прогр-ние} \\
+          \hline
+            (--) необходимое условие & (+) достаточное условие\\
+          \hline
+            (--) локальное решение & (+) глобальное решение\\
+          \hline
+            (--) усложнение для задач с фаз. огр. & (+) упрощение ...\\
+          \hline
+            (--) программное решение & (+) позиционное решение\\
+          \hline
+            \definecolor{dark-green}{rgb}{0, 0.7, 0.376}
+                \textcolor{dark-green}{(+) относительная простота} & \textcolor{red}{(--) проклятие размерности}\\
+          \hline
+        \end{tabular}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Постановки задач оптимального управления}
+    \begin{block}{\begin{center} Состояние системы управления \end{center}}
+        \begin{tabular}[t]{c|ll}
+          $ $ Для непрерывного времени $\quad\,$ & Для дискретного времени \\
+
+          $\overset{.}{x} = f(x,u,t),\; x(t_0)=x_0 $  & $x_{t+1} = f(x,u,t),\; x(t_0)=x_0$
+ %                                           \begin{equation} \label{x_{t+1}=f(x,u,t),x(t_0)=x^0}
+ %                                               x_{t+1} = f(x,u,t),\; x(t_0)=x^0
+ %                                           \end{equation}
+
+       \end{tabular}
+    \end{block}
+
+     \begin{block}{\begin{center} Критерий качества типа Больца \end{center}}
+        \begin{tabular}[t]{c|ll}
+          %Для непрерывного времени & Для дискретного времени \\
+           $J=\int_{t_0}^{t_f}f(x,u,t)dt+\varphi(x(N))$  & $J = \sum_{t_0}^{N-1}f_0(x,u,t)+\varphi(x(N))$
+ %                       \begin{equation} \label{J = \sum_{t=0}^{N-1}f(x,u,t)+\varphi(x(N))}
+ %                           J = \sum_{t=0}^{N-1}f(x,u,t)+\varphi(x(N))
+ %                       \end{equation}
+       \end{tabular}
+    \end{block}
+
+    \begin{block}{\begin{center} Управление \end{center}}
+      \begin{tabular}[t]{c|ll}
+           $u(t) \in U, \; t \in T=[t_0,t_f] \mspace{58mu} $ & $u(t) \in U(t), t=\overline{\tau,N-1}$
+
+      \end{tabular}
+    \end{block}
+    %\begin{eqnarray} u=u(x), \; u_t=u(x_t) \end{eqnarray}
+\end{frame}
+
+\begin{frame}{Итог построенных задач}
+    \begin{block}{$\;$ {\Large \bf Задача в непрерывном времени}}
+        \begin{center}  {\Large
+            \begin{align}
+                \begin{split}
+                    J=\int_{t_0}^{t_f}f_0(x,u,t)dt &+ \varphi(x(N)) \rightarrow min \\
+                    \overset{.}{x} = f(x,u,t)&,\;  x(t_0)=x_0  \\
+                    u(t) \in U &, \; t \in T=[t_0,t_f]
+                \end{split}
+            \end{align} }
+        \end{center}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Итог построенных задач}
+    \begin{block}{$\;$  {\Large \bf Задача в дискретном времени}}
+        \begin{center}  {\Large
+            \begin{align}
+                \begin{split}
+                    J = \sum_{t_0}^{N-1}f_0(x,u,t) &+ \varphi(x(N)) \rightarrow min \\
+                    x_{t+1} = f(x,u,t)&,\; x(t_0)=x_0  \\
+                    u(t) \in U(t) &, t=\overline{\tau,N-1}
+                \end{split}
+            \end{align} }
+        \end{center}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Методы при решении задач динамического программирования}
+    \begin{itemize}
+        \item Инвариантное погружение -- вложение конкретной задачи в семейство подобных ей задач зависящих от некоторых параметров.
+        \item Функция Беллмана -- функция, выражающая зависимость между параметрами семейства и оптимальным значением критерия качества.
+        \item Уравнение Беллмана -- основное уравнение для функции Беллмана, основанное на принципе оптимальности.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Инвариантное погружение}
+    \begin{align}
+        \begin{split}
+            J(u|\tau,z) =\varphi(x(N))&+\sum_{t=\tau}^{N-1} f_0(x(t),u(t),t) \rightarrow min \\
+            x(t+1)&=f(x(t),u(t),t), \textcolor{red}{x(\tau)=z}, \\
+                u(t) &\in U(t), \; \textcolor{red}{t=\overline{\tau,N-1}}
+        \end{split}
+    \end{align}
+    \begin{block}{Определение функции Беллмана}
+        Минимальное значение критерия качества в задачах (3) как
+        функция позиции $(\tau,z)$
+          \[
+            B(\tau,z)=\underset{u}{min} J(u|\tau,z)
+          \]
+          называется \textit{функцией Беллмана}
+         \end{block}
+\end{frame}
+
+\begin{frame}{Принцип оптимальности Беллмана}
+    \textit{Оптимальное управление обладает тем свойством, что для любого начального состояния и ипользованного начального управления последующее оптимальное управление совпадает с исходным оптимальным управлением относительно состояния, получающегося в результате применения начального управления.}
+\end{frame}
+
+\begin{frame}{Вывод уравнения Беллмана} 
+    Положим $u(\tau)=v, \; 0 \leqslant \tau \leqslant N-2$ \\
+    \begin{center}
+        $J(u|\tau,z) \rightarrow min$ \\
+    \end{center}
+    \textcolor{red}{Минимум берется по $u(t), t=\overline{\tau+1,N-1}$}
+    \begin{block}{}
+        \begin{align}
+            \begin{split}
+                J(u|\tau,z) =\phi(x(N)) &+ f_0(z,v,\tau)+
+                        \sum_{t=\tau+1}^{N-1}f_0(x(t),u(t),t) \rightarrow min, \\
+                x(t+1) &= f(x(t),u(t),t), \; x(\tau+1)=f(z,v,t),\\
+                u(t) &\in U(t), \; t=\overline{\tau+1,N-1}
+            \end{split}
+        \end{align}
+    \end{block}
+    Согласно определению функции Беллмана \\
+    \begin{align}
+        min\{J(u|\tau,z)\}=f_0(z,v,\tau) +B(\tau+1,f(z,v,\tau))
+    \end{align}
+\end{frame}
+
+\begin{frame}{Вывод уравнения Беллмана}
+    \begin{align}
+        B(\tau,z)=\min_{v \in U(\tau)}
+            \Bigl[
+            f_0(z,v,\tau)+B(\tau + 1,f(z,v,\tau))
+            \Bigr], \;
+        \tau=\overline{0,N-1}
+    \end{align}
+    Для $\tau=N-1$
+    \begin{align}
+        B(N-1,z)=\min_{v \in U(N-1)}
+        \Bigl[
+            f_0(z,v,N-1)+ \varphi(f(z,v,N-1))
+        \Bigr]
+    \end{align}
+    \begin{block}{Уравнение Беллмана}
+    \begin{align}
+        B(\tau,z)=\min_{v \in U(\tau)}
+        \Bigl[
+                f_0(z,u,\tau) &+ B(\tau+1,f(z,v,\tau))
+        \Bigr],\; \tau = \overline{0,N-1},\\
+            B(N,z) &=\varphi(z),\; z\in R^n \notag
+        \end{align}
+    \end{block}
+   \begin{align}
+        u(\tau,z)=arg \min_{v \in U(\tau)}
+        \Bigl[
+            f_0(z,v,\tau)+B(\tau+1,f(z,v,\tau))
+        \Bigr]  \; \tau = \overline{0,N-1}
+    \end{align}
+\end{frame}
+
+\begin{frame}{Достаточные условия оптимальности} %%%%!!!!!
+        \newtheorem{Th}{Теорема}
+        \begin{Th} [1] \label{th1}
+        Если $B(t,x),t = \overline{0,N-1}, \; x \in R^n$, -- решение уравнения Беллмана (8), \; функция $u(t,x), t=\overline{0,N-1}, x \in R^n,$ \; удовлетворяет равенству
+       \[
+            u(t,x) = arg \min_{v \in U(t)}
+            \Bigl[
+                f_0(x,v,t)+B(t+1,f(x,v,t))
+            \Bigr],\]
+       $x^0(t), t=\overline{0,N}$ -- решение уравнения
+       \[
+            x(t+1)=f(x(t),u(t,x(t)),t), x(0)=x_0,
+       \] то $u^0(t)=u(t,x^0(t)),t \in T$ -- оптимальная программа в задаче (2)
+      \end{Th}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Для более сложных задач
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Проблема синтеза для дискретных систем}
+\begin{block}{}
+    \begin{gather}
+        J(t_0,x_0,u(\cdot))=\int_{t_0}^{T}f^0(x(\tau),u(\tau),\tau)d\tau + \varphi (x(T)) \rightarrow inf, \\
+        \overset{.}{x}=f(x(\tau),u(\tau),\tau), \; t_0 \leqslant \tau \leqslant T, \; x(t_0)=x_0, \\
+        x(\tau) \in G(\tau), \; t_0 \leqslant  \tau \leqslant T,\\
+        u=u(\tau \in V(\tau), \;  t_0 \leqslant  \tau \leqslant T; \; u(\tau) - \text{кусочно-непрерывна;}
+    \end{gather}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Проблема синтеза для дискретных систем}
+    \begin{block}{}
+        \begin{gather}
+           % \begin{split}
+                I_0 (x;[u_i]_0 = \sum_{i=0}^{N-1}F_i^0(x_i,u_i)+\varphi(x_N) \rightarrow inf, \\
+                x_{i+1} = F_i(x_i,u_i), \; i=0, \dots ,N-1, \; \; x_0=x,\\
+                x_i \in G_i, \; i=0, \dots , N,\\
+                [u_i]_0=(u_0,u_1, \dots ,u_{N-1}):u_i \in V_i, \; i=0. \dots ,N-1
+          %  \end{split}
+        \end{gather}
+    \end{block}
+    \[
+        \begin{split}
+            F_{i}^{0}(x,u) &= f^0(x,u,t_i)(t_{i+1} - t_i), \\
+            F_i (x,u) &= x + f(x,u,t)(t_{i+1} - t_i), \\
+            G_i &= G(t_i), \; V_i=V(t_i)
+        \end{split}
+    \]
+\end{frame}
+
+\begin{frame}{Проблема синтеза для дискретных систем}
+    \begin{block}{}
+        \begin{gather}
+            I_k(x,[u_i]_k) = \sum_{i=k}^{N-1}F_{i}^{0}(x_i,u_i) + \Phi(x_N) \rightarrow inf, \\
+            x_{i+1} = F_i (x_i,u_i), \; i=k, \dots ,N-1, \; x_k=x, \\
+            x_i \in G_i, \; \; i=k, \dots ,N, \\
+            [u_i]_k=(u_k,u_{k+1}, \dots , u_{N-1}):u_i \in V_i, \; i=k, \dots ,N-1
+        \end{gather}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Проблема синтеза для дискретных систем}
+    Введем $B_k(x)=\underset{\Delta_k(x)}{\inf} I_k(x,[u_i]_k), \; k=0, \dots , N-1$
+   % \newtheorem{Th}{Теорема}
+    \begin{Th}[]\label{th2}
+        Функция Беллмана задачи (18)-(21) необходимо является решением уравнения
+    \small{
+        \begin{gather}
+            B_k(x)= \underset{u \in D_k(x)}{\inf}[F_{k}^{0}(x,u) + B_{k+1}(F_k(x,u))], \; x \in X_k, k=0, \dots ,N-1
+            \intertext{где}
+            B_N(x)= \Phi(x), \; x \in G_N,
+        \end{gather}
+    }
+        $D_k(x)$ - множество всех тех $u \in V_k,$ для которых существует хотя бы одно управление $[u_i]_k \in \Delta_k(x)$ с компонентой $u_k = u.$ \\
+        Верно и обратное: функция $B_k(x), x \in X_k, k=0, \dots , N-1,$ определяемая условиями (22),(23), является функцией Беллмана задачи (14)-(17).
+    \end{Th}
+\end{frame}
+
+\begin{frame}{Проблема синтеза для дискретных систем}
+    В теории оптимального управления и ее приложениях важное место занимает так называемая \textit{проблема синтеза}, заключащаяся в построении функции $u=u_k(x)$, выражающей собой оптимальное управление при условии, то в момент $k$ объект находится в точке $x$ фазового пространства. Такая функция $u_k(x)$ называется \textit{синтезирующей}.
+\end{frame}
+
+\begin{frame}{Проблема синтеза для дискретных систем}
+    \begin{Th}[]\label{th3}
+    Пусть множества $G_k, k=0, \dots ,N,$ замкнуты, множества $V_k, k=0, \dots ,N-1$, замкнуты и ограничены, функция $F_{k}^{0}(x,u)$ полунепрерывна снизу ... (стр 3)
+    \end{Th}
+\end{frame}
+
+\end{document}
+
