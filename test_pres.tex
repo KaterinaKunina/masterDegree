@@ -1,0 +1,179 @@
+\documentclass{beamer}
+\usepackage{beamerinnerthemecircles, beamerouterthemeshadow}
+\usepackage{amsmath, amsfonts, amscd, epsfig, amssymb, amsthm, pb-diagram}
+\usepackage{color}
+\usepackage[cp1251]{inputenc}
+\usepackage[english,russian]{babel}
+
+\usepackage{graphicx}
+
+
+\usetheme{Boadilla}
+
+
+
+\setbeamertemplate{navigation symbols}{}
+
+
+\title[] {Методы управления по прогнозирующей модели для отслеживания магистралей в задачах экономической динамики}
+
+\author[Кунина Екатерина]{Студентка: Кунина Екатерина Сергеевна \\ Научный руководитель: Дмитрук Наталия Михайловна}
+
+\institute[БГУ, ФПМИ]{}
+
+\date[]{\small июнь 2019}
+
+
+\begin{document}
+
+\maketitle
+
+%-------------------------------------------------------------------------------------------------------
+
+
+\begin{frame}{ЦЕЛЬ}
+\begin{itemize}
+ \item {\bf Цель работы} -- применить методы управления по прогнозирующей модели для отслеживания магистралей в рассматриваемых задачах оптимального управления.
+
+ \item {\bf Объектом исследования} являются задачи оптимального управления на бесконечном полуинтервале времени, обладающие магистральными свойствами.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Схема управления по прогнозирующей модели}
+%   \begin{block}{\begin{center} \textbf{}  \end{center}}
+  
+%   \end{block}
+	\noindent\centering{
+		\includegraphics[width=55mm]{scheme.png}
+		}
+\end{frame}
+
+
+\begin{frame}{Схема управления по прогнозирующей модели}
+ \begin{block}{\begin{center} \textbf{Общая схема управления с предсказанием описывается следующим образом:}  \end{center}}
+	\begin{enumerate}
+	\item Оценивание  или измерение вектора состояния  реального объекта.
+	\item Решение задачи (нахождение положения равновесия).
+	\item Использование найденной оптимальной функции $u^*$ в качестве программного управления на отрезке $\tau \in [t, t+\delta]$.
+	\item Замена момента времени $t$ на момент $t+\delta$ и повторение операций в пунктах 1-3.
+	\end{enumerate}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Задача оптимизации неоклассической модели экономического роста}
+\begin{block}{}
+\begin{enumerate}
+	\item Критерий качества
+	\begin{equation}
+	J(x,u) = \int_0^\infty e^{-\rho t} [\ln(1- u(t)) + \ln f(x(t))] dt \to \max \label{Ex1_J}
+	\end{equation}
+	\item Математическая модель
+	\begin{equation}
+	 \dot{x}(t) = u(t) f(x(t)) - \mu x(t),\quad x(0) = x_0 \label{Ex1_dotx}
+	\end{equation}
+	\item Ограничения на управления
+	\begin{equation}
+	0 \leqslant u \leqslant 1 - \varepsilon \label{Ex1_u}
+	\end{equation}
+\end{enumerate}
+\end{block}
+
+{\it где $0 < \varepsilon < 1, \; \mu > 0$ --- некоторые постоянные. \\
+$ \quad \; \; \rho > 0$ --- параметр дисконтирования.}
+\end{frame}
+
+\begin{frame}{Задача оптимизации неоклассической модели экономического роста}
+   \begin{block}{\begin{center} \textbf{}  \end{center}}
+  \begin{align}
+	J(x,u) = &\int_0^{\tau_N} w|x(t) - x^*|^2 + |u(t) - u^*|^2 dt \to \min, \label{Ex1_MPC_J} \\
+	\dot{x}(t) &= u(t) f(x(t)) - \mu x(t), \quad x(0) = x_{\tau_p}, \label{Ex1_MPC_dotx}\\
+	u_s f&(x_{\tau_N}) - \mu x_{\tau_N} = 0, \label{Ex1_MPC}\\
+	 &0 \leqslant u(t) \leqslant 1-\varepsilon, \quad t \in [0, \tau_N). \label{Ex1_MPC_u}\\	
+\end{align}
+   \end{block}
+{\it где $w$ --- весовой коэффициент.} \\
+Уравнение (\ref{Ex1_MPC}) обеспечивает, что траектория предсказанного состояния $x(t)$ сходится к допустимому промежуточному состоянию.
+\end{frame}
+
+\begin{frame}{Решение: изменение начального состояния}
+\begin{block}{\begin{center} \textbf{Отслеживание магистралей при параметрах задачи:}  \end{center}}
+ \noindent
+  \parbox[b][3cm][t]{10mm}{
+		\includegraphics[width=70mm]{fig_x1_tf2_w1.eps}}
+  \hfill
+  \parbox[b][3cm][t]{50mm}{
+  \[1. \; \tau_N = 2,\, \textcolor{red}{x_0 = 1}, \, w = 1,\] 
+   \[\mu = 0.05,\, \rho = 0.02,\, \alpha = 0.4\]
+  }
+  
+\noindent
+ \parbox[b][3cm][t]{10mm}{
+		\includegraphics[width=70mm]{fig_x10_tf2_w1.eps}}
+  \hfill
+  \parbox[b][3cm][t]{50mm}{
+  \[2. \; \tau_N = 2,\, \textcolor{red}{x_0 = 10}, \, w = 1,\] 
+   \[\mu = 0.05,\, \rho = 0.02,\, \alpha = 0.4\]
+  }
+\end{block}
+Для выбранных значений параметров получаем следующее решение: $x^* = 18.2643,\; u^* = 0.2857.$
+
+\end{frame}
+
+\begin{frame}{Решение: изменение длины горизонта}
+\begin{block}{\begin{center} \textbf{Отслеживание магистралей при параметрах задачи:}  \end{center}}
+ \noindent
+  \parbox[b][3cm][t]{10mm}{
+		\includegraphics[width=70mm]{fig_x1_tf2_w1.eps}}
+  \hfill
+  \parbox[b][3cm][t]{50mm}{
+  \[3. \; \textcolor{red}{\tau_N = 2},\, x_0 = 1, \, w = 1,\] 
+   \[\mu = 0.05,\, \rho = 0.02,\, \alpha = 0.4\]
+  }
+  
+\noindent
+ \parbox[b][3cm][t]{10mm}{
+		\includegraphics[width=70mm]{fig_x1_tf50_w1.eps}}
+  \hfill
+  \parbox[b][3cm][t]{50mm}{
+  \[4. \; \textcolor{red}{\tau_N = 50},\, x_0 = 1, \, w = 1,\] 
+   \[\mu = 0.05,\, \rho = 0.02,\, \alpha = 0.4\]
+  }
+\end{block}
+\end{frame}
+
+\begin{frame}{Решение: изменение весового коэффициента}
+\begin{block}{\begin{center} \textbf{Отслеживание магистралей при параметрах задачи:}  \end{center}}
+ \noindent
+  \parbox[b][3cm][t]{10mm}{
+		\includegraphics[width=70mm]{fig_x1_tf2_w01.eps}}
+  \hfill
+  \parbox[b][3cm][t]{50mm}{
+  \[5. \; \tau_N = 2,\, x_0 = 1, \, \textcolor{red}{w = 0.1},\] 
+   \[\mu = 0.05,\, \rho = 0.02,\, \alpha = 0.4\]
+  }
+  
+\noindent
+ \parbox[b][3cm][t]{10mm}{
+		\includegraphics[width=70mm]{fig_x1_tf2_w10.eps}}
+  \hfill
+  \parbox[b][3cm][t]{50mm}{
+  \[6. \; \tau_N = 2,\, x_0 = 1, \, \textcolor{red}{w = 10},\] 
+   \[\mu = 0.05,\, \rho = 0.02,\, \alpha = 0.4\]
+  }
+\end{block}
+\end{frame}
+
+\begin{frame}{РЕЗУЛЬТАТ}
+\begin{center}
+Результатом работы является построение магистралей для задач оптимального управления, используя оптимизацию в реальном времени и метод управления по прогнозирующей модели. При решении задач управления с прогнозирующей моделью учитываются ограничения, накладываемые на состояние объекта и управление.
+\end{center}
+\end{frame}
+
+\begin{frame}{}
+\begin{center}
+{\huge {\bf СПАСИБО ЗА ВНИМАНИЕ!}}
+\end{center}
+\end{frame}
+
+\end{document}
+
